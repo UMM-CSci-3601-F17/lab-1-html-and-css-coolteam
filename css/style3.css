@@ -8,6 +8,37 @@ use float to make something locate itself on the right or left
 */
 
 body{
-    padding: 30px;
+    padding: 5px;
     background-color: #aaaaaa;
 }
+
+#main-title{
+    border-style: ridge;
+    border-width: 20px;
+    border-radius: 5px;
+    border-color: purple;
+
+    color: #9BB4C7;
+    font-family: Droid Sans;
+    font-size: 3.5em;
+    text-align: center;
+    background: blue;
+}
+
+#courses {
+    float: right;
+    width: 80%;
+}
+#pslo {
+    float: right;
+    width: 80%
+}
+#faculty{
+    float: left;
+    width: 5%;
+}
+img.pic {
+    height: 100px;
+    border: 3px solid #000000;
+}
+
