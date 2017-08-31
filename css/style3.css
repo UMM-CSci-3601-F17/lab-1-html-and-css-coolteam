@@ -9,20 +9,26 @@ use float to make something locate itself on the right or left
 
 body{
     padding: 5px;
-    background-color: #aaaaaa;
+    background-image: url(http://www.thefantasyreport.net/wp-content/uploads/2015/10/matrix-code.jpg);
 }
 
 #main-title{
-    border-style: ridge;
+    border-style: ridge ;
     border-width: 20px;
     border-radius: 5px;
-    border-color: purple;
+    border-color: dimgray;
 
     color: #9BB4C7;
     font-family: Droid Sans;
     font-size: 3.5em;
     text-align: center;
-    background: blue;
+    background: darkslategray;
+}
+
+.section {
+    border-style: solid;
+    border-color: black;
+    background-color: dimgray;
 }
 
 #courses {
@@ -35,10 +41,47 @@ body{
 }
 #faculty{
     float: left;
-    width: 5%;
+    width: 15%;
 }
 img.pic {
     height: 100px;
     border: 3px solid #000000;
 }
 
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+
+#style ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#style li {
+    float: left; /*explore what happens if this is 'right' instead*/
+}
+
+#style li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px; /*this adds some spacing around the items in my style footer*/
+    text-decoration: none;
+}
+
+/* Change the link color to #000 (black) on hover */
+#style li a:hover {
+    background-color: #000;
+}
+
+#style {
+    position: fixed;
+    background-color: #7A0019;;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 55px;
+    padding-top: 10px;
+}
