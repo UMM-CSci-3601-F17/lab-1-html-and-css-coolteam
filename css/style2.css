@@ -1,3 +1,4 @@
+
 /*
 hint:
 use # in front of the name of an id from your html page
@@ -8,6 +9,198 @@ use float to make something locate itself on the right or left
 */
 
 body{
-    padding: 30px;
-    background-color: #ffffff;
+    padding-top: 0px;
+    background-color: #ffffcc;
+    margin: 0;
+
+}
+#main-title
+{
+    margin: 0px 0px 0px 0px;
+    font-size: 4vw;
+    font-family: Roboto;
+    border-color: #827717;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 2px;
+    color: #7A0019;
+    text-align: left;
+    padding-left: 45px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    background: #ffff99;
+    position: relative
+    /*
+    The main title element in this style contains more precise padding adjustments than the other styles
+    and also uses a different style of font. The text is aligned to the left and the border is also
+    fine-tuned. The color scheme is similar to style one yet still distinct and is completely different
+    from style 3.
+     */
+}
+#style ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #7A0019;
+}
+
+#style li {
+    float: right;
+    border-color: #7A0019;
+}
+
+#style li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.250em 2.500em;
+    text-decoration: none;
+    border-color: #7A0019;
+    float: right;
+    font-size: 1.5vw;
+}
+
+#style li a:hover {
+    background-color: #f0f4c3;
+    color: #000;
+}
+
+#style {
+    position: absolute;
+    background-color: #7A0019;;
+    left: 0;
+    right: 0;
+    top: 6.875em;
+    height: 3.125em;
+    padding-top: 0;
+    /*
+     The style element within this style is set to absolute rather than fixed which is different from the others,
+     though it maintains the left and right positioning assignments, though the
+     top pos. The proportions of the bar are increased
+     in comparison to the other two navigation bars and
+     */
+}
+
+#pslo, .section {
+    margin-top: 6.000em;
+    margin-left: 3.750em;
+    margin-bottom: 5.5em;
+    background-color: #ffecb3;
+    opacity: 0.9;
+    padding: 1.875em;
+    width: 40%;
+    line-height: 250%;
+    max-width: 750px;
+    /*
+    This rule uses grouping and also applies properties to a class at the same time. It defines the adaptable
+    margins (spacing between elements), and padding of content. Uniquely, opacity and line-height properties
+    are also assigned here.
+     */
+}
+/* nesting, grouping*/
+#pslo h2 , #courses h2  {
+    color: #7A0019;
+}
+
+
+#faculty {
+    margin-top: 6.250em;
+    margin-left: 60%;
+    margin-right: 6.250em;
+    background-color: #ffecb3;
+    opacity: 0.9;
+    padding: 0.4em;
+    width: auto;
+    display: inline-block;
+    left: 0;
+    right: 0;
+    top: 9.375em;
+    position: absolute;
+    line-height: 110%;
+    max-width: 450px;
+    /*
+    The properties assigned to this div are somewhat adaptable since the em unit is used for
+    dimension measurements. The position is set to absolute however, so some overlap occurs
+    if the screen shrinks too much, but it does allow for more precise and complex positioning (stacking).
+     */
+}
+/* Nesting */
+#faculty h2 {
+    color: #7A0019;
+    text-align: center;
+}
+/* Nesting */
+#faculty>ul>li {
+    display: inline-block;
+    padding: 1.875em;
+}
+
+#faculty-list {
+    padding-left: 0;
+}
+
+img.pic {
+    height: 9.375em;
+    border: 0.125em solid #000000;
+}
+img.pic:hover {
+    height: 10.000em;
+    border: 0.250em solid #000000;
+    border-radius: 1.563em;
+}
+.name {
+    color: #7A0019;
+}
+.section {
+    line-height: 150%;
+    width: 85%;
+    margin-bottom: 2%;
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px)
+and (orientation : portrait) {
+    #style li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 2.25em 3.5em;
+        text-decoration: none;
+        border-color: #7A0019;
+        float: right;
+        font-size: 7%;
+    }
+    #pslo, .section {
+        margin-top: 6.000em;
+        margin-left: -2.25em;
+        background-color: #ffecb3;
+        opacity: 0.9;
+        padding: 1.875em;
+        width: 100%;
+        line-height: 130%;
+    }
+    /* nesting & grouping */
+    #pslo h2, #courses h2, #faculty h2{
+        text-align: center;
+    }
+    #faculty {
+        margin-top: 325%;
+        margin-left: -2.25em;
+        margin-right: 0;
+        background-color: #ffecb3;
+        opacity: 0.9;
+        padding-left: 7.625em;
+        padding-right: 54%;
+        width: auto;
+        display: inline-block;
+        position: absolute;
+        line-height: 110%;
+    }
+    /*
+    This rule and associated sub rules were designed to show different display properties
+    when phone screens are used (especially the iphone 6 dimensions).
+     */
 }
