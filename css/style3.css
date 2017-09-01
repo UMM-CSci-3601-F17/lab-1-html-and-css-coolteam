@@ -1,3 +1,4 @@
+
 /*
 hint:
 use # in front of the name of an id from your html page
@@ -13,18 +14,13 @@ body{
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 5px;
-    background-color: #e6e6ff;
+    background-image: url(http://www.thefantasyreport.net/wp-content/uploads/2015/10/matrix-code.jpg);
     margin: 0;
     /*
     recommended by w3schools
      */
 }
 
-/*
-  This rule provides a distinctive looking title for the style 3 page.
-  The main difference between the other styles was the ridge border which
-  has a 3-d effect that looks nice with the rest of the page.
-   */
 #main-title{
     border-style: ridge ;
     border-width: 20px;
@@ -37,17 +33,23 @@ body{
     text-align: center;
     background: darkslategray;
 
+    /*
+	  This rule provides a distinctive looking title for the style 3 page.
+	  The main difference between the other styles was the ridge border which
+	  has a 3-d effect that looks nice with the rest of the page.
+	   */
 }
-/*
-This rule is applied to a class of elements to cut down on code duplication.
-It is different from the other styles in that it applies the background properties
-to all of its children rather than just text rules.
- */
+
 .section {
     border-style: solid;
     border-color: black;
     background-color: dimgray;
 
+    /*
+This rule is applied to a class of elements to cut down on code duplication.
+It is different from the other styles in that it applies the background properties
+to all of its children rather than just text rules.
+ */
 }
 
 #faculty{
@@ -57,9 +59,7 @@ to all of its children rather than just text rules.
     display: table-cell;
     min-width: 250px;
     max-height: 1000px;
-    margin-top: 3%;
-    margin-right: 5%;
-    width: 15%;
+
 }
 
 #courses {
@@ -74,7 +74,12 @@ to all of its children rather than just text rules.
     min-height: 550px;
     width: 550px;
 }
-
+#courses >h2 {
+    text-align: center;
+    /*
+This rule features nesting to align the text of a header within a div
+ */
+}
 
 #pslo {
     text-align:center;
@@ -87,18 +92,9 @@ to all of its children rather than just text rules.
     margin-top: 80px;
     margin-left: 50px;
     margin-right: 50px;
-    width:40%;
+    width:550px;
     min-height: 550px;
 }
-
-
-/*
-This rule features nesting to align the text of a header within a div
- */
-#courses h2 {
-    text-align: center;
-}
-
 img.pic {
     height: 125px;
     width: 125px;
@@ -122,17 +118,18 @@ img.pic {
     display: block;
     color: white;
     text-align: center;
-    padding: 25px 16px;
+    padding: 25px 16px; /*this adds some spacing around the items in my style footer*/
     text-decoration: none;
 }
 
+/* Change the link color to #000 (black) on hover */
 #style li a:hover {
     background-color: #000;
 }
 
 #style {
     position: fixed;
-    top: 21%;
+    top: 45%;
     right: 0;
     width: 150px;
     height: 50%;
