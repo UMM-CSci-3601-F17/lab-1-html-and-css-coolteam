@@ -13,7 +13,7 @@ body{
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 5px;
-    background-image: url(http://www.thefantasyreport.net/wp-content/uploads/2015/10/matrix-code.jpg);
+    background-color: #e6e6ff;
     margin: 0;
     /*
     recommended by w3schools
@@ -48,7 +48,9 @@ body{
     display: table-cell;
     min-width: 250px;
     max-height: 1000px;
-
+    margin-top: 3%;
+    margin-right: 5%;
+    width: 15%;
 }
 
 #courses {
@@ -78,7 +80,7 @@ body{
     margin-top: 80px;
     margin-left: 50px;
     margin-right: 50px;
-    width:550px;
+    width:40%;
     min-height: 550px;
 }
 img.pic {
@@ -115,7 +117,7 @@ img.pic {
 
 #style {
     position: fixed;
-    top: 45%;
+    top: 21%;
     right: 0;
     width: 150px;
     height: 50%;
