@@ -111,7 +111,7 @@ body{
     margin-right: 6.250em;
     background-color: #ffecb3;
     opacity: 0.9;
-    padding: 0.625em;
+    padding: 0.4em;
     width: auto;
     display: inline-block;
     left: 0;
@@ -119,6 +119,7 @@ body{
     top: 9.375em;
     position: absolute;
     line-height: 110%;
+    max-width: 450px;
     /*
     The properties assigned to this div are somewhat adaptable since the em unit is used for
     dimension measurements. The position is set to absolute however, so some overlap occurs
