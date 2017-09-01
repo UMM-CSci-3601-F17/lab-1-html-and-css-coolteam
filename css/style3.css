@@ -32,11 +32,11 @@ body{
     font-size: 3.5em;
     text-align: center;
     background: darkslategray;
-
     /*
 	  This rule provides a distinctive looking title for the style 3 page.
 	  The main difference between the other styles was the ridge border which
 	  has a 3-d effect that looks nice with the rest of the page.
+	  Radius makes the border slightly rounded.
 	   */
 }
 
@@ -86,7 +86,6 @@ This rule features nesting to align the text of a header within a div
     font-size: 1.3em;
     vertical-align: top;
     padding: 20px;
-    display: inline-block;
     position: relative;
     left: 30px;
     margin-top: 80px;
@@ -94,6 +93,14 @@ This rule features nesting to align the text of a header within a div
     margin-right: 50px;
     width:550px;
     min-height: 550px;
+
+    /*
+    Most of the modifications to this element control its positioning and spacing between other
+    divs. The relative position helps for responsiveness between screen sizes, although shrinking the screen
+    will make the layout less aesthetically pleasing/symmetric. The font sizes are adaptive in this rule.
+    There is some padding to make the interior look more tidy. If we had more time we would have liked to
+    change the borders, colors, and fonts of this element and the others in its class.
+     */
 }
 img.pic {
     height: 125px;
@@ -118,11 +125,10 @@ img.pic {
     display: block;
     color: white;
     text-align: center;
-    padding: 25px 16px; /*this adds some spacing around the items in my style footer*/
+    padding: 25px 16px;
     text-decoration: none;
 }
 
-/* Change the link color to #000 (black) on hover */
 #style li a:hover {
     background-color: #000;
 }
@@ -134,4 +140,12 @@ img.pic {
     width: 150px;
     height: 50%;
 
+    /*
+    This element was modified from the other two styles although it is still fixed to the page
+    (mainly to make it easier to position). Instead of being fixed to the top of the page however,
+    it is fixed to the right side (controlled by right).This change was made to accommodate the
+    switch from a horizontal list to a vertical one, but that feature isn't controlled in this rule.
+    Width is also adjusted for the vertical display (so it doesn't stretch across the screen),
+    and top moves the bar to the center of the page.
+     */
 }
