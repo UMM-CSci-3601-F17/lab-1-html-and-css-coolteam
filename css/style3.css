@@ -32,6 +32,7 @@ body{
     font-size: 3.5em;
     text-align: center;
     background: darkslategray;
+
     /*
 	  This rule provides a distinctive looking title for the style 3 page.
 	  The main difference between the other styles was the ridge border which
@@ -46,9 +47,9 @@ body{
     background-color: dimgray;
 
     /*
-This rule is applied to a class of elements to cut down on code duplication.
-It is different from the other styles in that it applies the background properties
-to all of its children rather than just text rules.
+    This rule is applied to a class of elements to cut down on code duplication.
+    It is different from the other styles in that it applies the background properties
+    to all of its children rather than just text rules.
  */
 }
 
@@ -86,6 +87,7 @@ This rule features nesting to align the text of a header within a div
     font-size: 1.3em;
     vertical-align: top;
     padding: 20px;
+    display: inline-block;
     position: relative;
     left: 30px;
     margin-top: 80px;
@@ -148,4 +150,5 @@ img.pic {
     Width is also adjusted for the vertical display (so it doesn't stretch across the screen),
     and top moves the bar to the center of the page.
      */
+
 }

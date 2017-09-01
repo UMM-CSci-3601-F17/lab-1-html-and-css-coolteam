@@ -1,4 +1,4 @@
-    line-height: 110%;
+
 /*
 hint:
 use # in front of the name of an id from your html page
@@ -11,7 +11,7 @@ use float to make something locate itself on the right or left
 body{
     padding-top: 0px;
     background-color: #ffffcc;
-    margin: none;
+    margin: 0;
 
 }
 #main-title
@@ -31,6 +31,12 @@ body{
     padding-bottom: 60px;
     background: #ffff99;
     position: relative
+    /*
+    The main title element in this style contains more precise padding adjustments than the other styles
+    and also uses a different style of font. The text is aligned to the left and the border is also
+    fine-tuned. The color scheme is similar to style one yet still distinct and is completely different
+    from style 3.
+     */
 }
 #style ul {
     list-style-type: none;
@@ -69,21 +75,33 @@ body{
     top: 6.875em;
     height: 3.125em;
     padding-top: 0;
+    /*
+     The style element within this style is set to absolute rather than fixed which is different from the others,
+     though it maintains the left and right positioning assignments, though the
+     top pos. The proportions of the bar are increased
+     in comparison to the other two navigation bars and
+     */
 }
 
 #pslo, .section {
     margin-top: 6.000em;
     margin-left: 3.750em;
+    margin-bottom: 5.5em;
     background-color: #ffecb3;
     opacity: 0.9;
     padding: 1.875em;
     width: 40%;
     line-height: 250%;
+    max-width: 750px;
+    /*
+    This rule uses grouping and also applies properties to a class at the same time. It defines the adaptable
+    margins (spacing between elements), and padding of content. Uniquely, opacity and line-height properties
+    are also assigned here.
+     */
 }
 
 #pslo h2 , #courses h2  {
     color: #7A0019;
-    opacity: none;
 }
 
 
@@ -100,29 +118,31 @@ body{
     right: 0;
     top: 9.375em;
     position: absolute;
-    background-color: #ffecb3;
-    opacity: 0.9;
-    line-height: 110%
+    line-height: 110%;
+    /*
+    The properties assigned to this div are somewhat adaptable since the em unit is used for
+    dimension measurements. The position is set to absolute however, so some overlap occurs
+    if the screen shrinks too much, but it does allow for more precise and complex positioning (stacking).
+     */
 }
-
+/* Nesting */
 #faculty h2 {
     color: #7A0019;
     text-align: center;
-    opacity: none;
 }
+/* Nesting */
 #faculty>ul>li {
     display: inline-block;
     padding: 1.875em;
 }
 
 #faculty-list {
-    padding-left: 0
+    padding-left: 0;
 }
 
 img.pic {
     height: 9.375em;
     border: 0.125em solid #000000;
-    background: relative;
 }
 img.pic:hover {
     height: 10.000em;
@@ -163,12 +183,11 @@ and (orientation : portrait) {
 }
 #pslo h2, #courses h2, #faculty h2{
     text-align: center;
-    opacity: none;
 }
 #faculty {
     margin-top: 325%;
     margin-left: -2.25em;
-    margin-right: none;
+    margin-right: 0;
     background-color: #ffecb3;
     opacity: 0.9;
     padding-left: 7.625em;
@@ -176,8 +195,10 @@ and (orientation : portrait) {
     width: auto;
     display: inline-block;
     position: absolute;
-    background-color: #ffecb3;
-    opacity: 0.9;
     line-height: 110%;
 }
+/*
+This rule and associated sub rules were designed to show different display properties
+when phone screens are used (especially the iphone 6 dimensions).
+ */
 }
