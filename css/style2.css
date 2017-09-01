@@ -70,7 +70,7 @@ body{
     padding-top: 0;
 }
 
-#pslo {
+#pslo, .section {
     margin-top: 6.000em;
     margin-left: 3.750em;
     background-color: #ffecb3;
@@ -80,8 +80,9 @@ body{
     line-height: 250%;
 }
 
-#pslo h2 {
+#pslo h2 , #courses h2  {
     color: #7A0019;
+    opacity: none;
 }
 
 
@@ -106,6 +107,7 @@ body{
 #faculty h2 {
     color: #7A0019;
     text-align: center;
+    opacity: none;
 }
 #faculty>ul>li {
     display: inline-block;
@@ -128,4 +130,53 @@ img.pic:hover {
 }
 .name {
     color: #7A0019;
+}
+.section {    
+    line-height: 150%;
+    width: 85%;
+    margin-bottom: 2%;
+}
+
+@media only screen 
+and (min-device-width : 375px) 
+and (max-device-width : 667px) 
+and (orientation : portrait) { 
+    #style li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2.25em 3.5em;
+    text-decoration: none;
+    border-color: #7A0019;
+    float: right;
+    font-size: 7%;
+}
+#pslo, .section {
+    margin-top: 6.000em;
+    margin-left: -2.25em;
+    background-color: #ffecb3;
+    opacity: 0.9;
+    padding: 1.875em;
+    width: 100%;
+    line-height: 130%;
+}
+#pslo h2, #courses h2, #faculty h2{
+    text-align: center;
+    opacity: none;
+}
+#faculty {
+    margin-top: 325%;
+    margin-left: -2.25em;
+    margin-right: none;
+    background-color: #ffecb3;
+    opacity: 0.9;
+    padding-left: 7.625em;
+    padding-right: 54%;
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    background-color: #ffecb3;
+    opacity: 0.9;
+    line-height: 110%;
+}
 }
