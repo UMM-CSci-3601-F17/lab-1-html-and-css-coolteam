@@ -99,7 +99,7 @@ body{
     are also assigned here.
      */
 }
-
+/* nesting, grouping*/
 #pslo h2 , #courses h2  {
     color: #7A0019;
 }
@@ -182,6 +182,7 @@ and (orientation : portrait) {
     width: 100%;
     line-height: 130%;
 }
+/* nesting & grouping */
 #pslo h2, #courses h2, #faculty h2{
     text-align: center;
 }
