@@ -1,3 +1,4 @@
+
 /*
 hint:
 use # in front of the name of an id from your html page
@@ -8,6 +9,134 @@ use float to make something locate itself on the right or left
 */
 
 body{
-    padding: 30px;
-    background-color: #aaaaaa;
+
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 5px;
+    background-image: url(http://www.thefantasyreport.net/wp-content/uploads/2015/10/matrix-code.jpg);
+    margin: 0;
+    /*
+    The body rule is similar to the other styles though adjustments to padding are made and
+    a background image url is supplied rather than a color. The margin property was suggested by
+    the tutorial page, so it was included even though excluding it doesn't seem to alter anything.
+     */
+}
+
+#main-title{
+    border-style: ridge ;
+    border-width: 20px;
+    border-radius: 5px;
+    border-color: dimgray;
+    color: #9BB4C7;
+    font-family: Droid Sans;
+    font-size: 3.5em;
+    text-align: center;
+    background: darkslategray;
+    /*
+	  This rule provides a distinctive looking title for the style 3 page.
+	  The main difference between the other styles was the ridge border which
+	  has a 3-d effect that looks nice with the rest of the page.
+	  Radius makes the border slightly rounded.
+	   */
+}
+
+.section {
+    border-style: solid;
+    border-color: black;
+    background-color: dimgray;
+
+    /*
+    This rule is applied to a class of elements to cut down on code duplication.
+    It is different from the other styles in that it applies the background properties
+    to all of its children rather than just text rules.
+ */
+}
+
+
+#faculty{
+    margin-left: 50px;
+    text-align: center;
+    float: left;
+    display: table-cell;
+    min-width: 250px;
+    max-height: 1000px;
+
+}
+/*Grouping */
+#courses, #pslo {
+    font-size: 1.3em;
+    vertical-align: top;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    margin-top: 80px;
+    margin-left: 50px;
+    margin-right: 50px;
+    min-height: 550px;
+    width: 550px;
+
+    /*
+  Most of the modifications to these elements control their positioning and spacing between other
+  divs. The relative position helps for responsiveness between screen sizes, although shrinking the screen
+  will make the layout less aesthetically pleasing/symmetric. The font sizes are adaptive in this rule.
+  There is some padding to make the interiors look more tidy. The inline-block
+  helps them to appear side by side to each other and the other divs. If we had more time we would have liked to
+  change the borders, colors, and fonts of these elements and the others in its class.
+   */
+}
+/* Nesting & grouping */
+#courses h2, #faculty h2, #pslo h2 {
+    text-align: center;
+}
+
+#pslo {
+    left: 30px;
+}
+img.pic {
+    height: 125px;
+    width: 125px;
+    border: 3px solid #000000;
+}
+
+
+#style ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+#style li {
+    display:block;
+}
+
+#style li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 16px;
+    text-decoration: none;
+}
+
+#style li a:hover {
+    background-color: #000;
+}
+
+#style {
+    position: fixed;
+    top: 45%;
+    right: 0;
+    width: 150px;
+    height: 50%;
+    /*
+    This element was modified from the other two styles although it is still fixed to the page
+    (mainly to make it easier to position). Instead of being fixed to the top of the page however,
+    it is fixed to the right side (controlled by right).This change was made to accommodate the
+    switch from a horizontal list to a vertical one, but that feature isn't controlled in this rule.
+    Width is also adjusted for the vertical display (so it doesn't stretch across the screen),
+    and top moves the bar to the center of the page.
+     */
+
 }
